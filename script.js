@@ -1,5 +1,7 @@
 function stringChop(str, size) {
   // your code here
+	if (!str) return []; // handle null or empty string
+  if (size <= 0) return [];
 	let arr = [];
 	if(str.length<=size){
 		return [str];
@@ -12,6 +14,7 @@ function stringChop(str, size) {
 	}
 	return arr;
 }
+
 
 // Do not change the code below
 const str = prompt("Enter String.");
